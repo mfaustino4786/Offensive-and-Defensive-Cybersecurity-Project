@@ -98,8 +98,16 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 
 --Step 4: Password Cracking
 
+--john --format=md5crypt-long --wordlist=/usr/share/wordlists/rockyou.txt shadow
+![John](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/johnrun.png)
 
---john shadow --format=md5crypt-long
+--john -show shadow
+
+![johnshow](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/johnshow.png)
+
+
+
+
 
 
 ## 📅 Progress Log
