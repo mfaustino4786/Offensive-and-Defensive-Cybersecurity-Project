@@ -48,8 +48,8 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 - ---
 
 ## 📅 Progress Log
-- **[Date]** Initial lab setup in VirtualBox
-- **[Date]** Performed reconnaissance and scanning with Nmap
-- **[Date]** Gained shell access to Metasploitable via FTP exploit
-- **[Date]** Extracted password hashes and began cracking
-- **[Date]** Implemented UFW firewall rules on Ubuntu defender
+- **08/09/2025** Initial lab setup in VirtualBox
+- **08/10/2025** Performed reconnaissance and scanning with Nmap
+- **08/10/2025** Gained shell access to Metasploitable via FTP exploit
+- **08/10/2025** Extracted password hashes and began cracking
+- **08/11/2025** Implemented UFW firewall rules on Ubuntu defender
