@@ -73,3 +73,9 @@ In this phase, we:
     Installed and configured Suricata for intrusion detection.
 
     Disabled root SSH login for improved access control.
+
+
+
+1. [Simulated Attack](01-SimulatedAttack.md)
+2. [Defender Baseline](02-DefenderBaseline.md)
+3. [Hardening](03-Hardening.md)
