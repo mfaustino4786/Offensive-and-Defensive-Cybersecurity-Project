@@ -64,3 +64,9 @@ Use john with the RockYou wordlist to crack hashes:
 --john -show shadow
 
 ![johnshow](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/johnshow.png)
+
+
+
+1. [Simulated Attack](01-SimulatedAttack.md)
+2. [Defender Baseline](02-DefenderBaseline.md)
+3. [Hardening](03-Hardening.md)
