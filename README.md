@@ -19,7 +19,7 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 |---------------|-----------------|
 | **Attacker**  | Kali Linux (Nmap, Metasploit,  John the Ripper) | 192.168.27.5
 | **Victim**    | Metasploitable 2 (vulnerable Linux target) | 192.168.27.4
-| **Defender**  | Ubuntu Desktop (UFW firewall, fail2ban, IDS/IPS) |
+| **Defender**  | Ubuntu Server (UFW firewall, fail2ban, IDS/IPS) | 192.168.27.10
 
 ## ⚔️ Red Team Activities
 - **Reconnaissance:** Nmap scanning for open ports & services
