@@ -21,7 +21,12 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 | **Victim**   | Metasploitable 2 (vulnerable Linux target)              | 192.168.27.4   |
 | **Defender** | Ubuntu Server (UFW firewall, fail2ban, IDS/IPS)         | 192.168.27.10  |
 
+## 🔗 Lab Sections
 
+1. [Simulated Attack](SimulatedAttack.md)
+2. [Defender Baseline](DefenderBaseline.md)
+3. [Hardening](Hardening.md)
+   
 ## ⚔️ Red Team Activities
 - **Reconnaissance:** Nmap scanning for open ports & services
 - **Exploitation:** Using Metasploit to gain shell access
