@@ -73,3 +73,8 @@ The goal is to record the current network configuration, open ports, services, a
 - `/var/log/auth.log`
 
 ---
+
+
+1. [Simulated Attack](01-SimulatedAttack.md)
+2. [Defender Baseline](02-DefenderBaseline.md)
+3. [Hardening](03-Hardening.md)
