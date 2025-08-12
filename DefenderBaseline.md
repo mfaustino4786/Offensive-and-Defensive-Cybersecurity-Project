@@ -10,7 +10,7 @@ The goal is to record the current network configuration, open ports, services, a
 
 -- `ip a` (Verify NAT & Host-Only adapters are up)
 
-![verifyIP](screenshots/baseline-verify-ip.png)
+![verifyIP](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/1.updateupgrade.png)
 
 - `enp0s3` – NAT adapter (Internet access)
 - `enp0s8` – Host-Only adapter (`192.168.27.10/24`)
@@ -21,7 +21,7 @@ The goal is to record the current network configuration, open ports, services, a
 
 -- `nmap -sV 192.168.27.10`
 
-![nmapScan](screenshots/baseline-nmap.png)
+![nmapScan](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/2.identifynetwork%20.3%20nmap.png)
 
 **Notes:**
 - Port 22/tcp (OpenSSH) detected
@@ -33,7 +33,7 @@ The goal is to record the current network configuration, open ports, services, a
 
 -- `sudo ss -tulpn`
 
-![listeningServices](screenshots/baseline-ss.png)
+![listeningServices](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/4.listeningsvc.png)
 
 ---
 
@@ -41,7 +41,7 @@ The goal is to record the current network configuration, open ports, services, a
 
 -- `sudo systemctl list-units --type=service`
 
-![systemServices](screenshots/baseline-systemctl.png)
+![systemServices](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/5.systemsnap.png)
 
 ---
 
@@ -50,17 +50,15 @@ The goal is to record the current network configuration, open ports, services, a
 **CPU Usage:**
 -- `sar -u 1 5`
 
-![cpuUsage](screenshots/baseline-cpu.png)
 
 **Memory Usage:**
 -- `free -h`
 
-![memUsage](screenshots/baseline-memory.png)
 
 **Disk Usage:**
 -- `df -h`
 
-![diskUsage](screenshots/baseline-disk.png)
+![diskUsage](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/5b.%20cpu%2Cmem%2Cdskusage.png)
 
 ---
 
@@ -68,19 +66,10 @@ The goal is to record the current network configuration, open ports, services, a
 
 -- `sudo systemctl status rsyslog`
 
-![rsyslogStatus](screenshots/baseline-rsyslog.png)
+![rsyslogStatus](https://github.com/mfaustino4786/Offensive-and-Defensive-Cybersecurity-Project/blob/main/screenshots/6.rsysbaseline.png)
 
 **Key Log Files:**
 - `/var/log/syslog`
 - `/var/log/auth.log`
 
 ---
-
-## Step 7: Observations
-- Minimal services running by default
-- Only SSH exposed externally
-- Logging service active and capturing system events
-
----
-
-✅ **Next Step:** Proceed to [After Hardening Report](after_hardening.md) to compare system state after implementing security controls.
