@@ -23,9 +23,9 @@ The goal of this project is to replicate real-world scenarios, execute attack si
 
 ## 🔗 Lab Sections
 
-1. [Simulated Attack](SimulatedAttack.md)
-2. [Defender Baseline](DefenderBaseline.md)
-3. [Hardening](Hardening.md)
+1. [Simulated Attack](01-SimulatedAttack.md)
+2. [Defender Baseline](02-DefenderBaseline.md)
+3. [Hardening](03-Hardening.md)
    
 ## ⚔️ Red Team Activities
 - **Reconnaissance:** Nmap scanning for open ports & services
